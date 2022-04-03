@@ -1,0 +1,135 @@
+.sign-img {
+    background-image: url(../../assets/images/back-twitter.jpg);
+    background-size: 100% 100%;
+}
+.sign-up__wrap {
+    padding-top: 80px;
+    padding-left: 45px;
+    padding-bottom: 20px;
+}
+.sign-up__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 90px;
+    color: #000000;
+}
+.sign-up__main-title {
+    display: block;
+    margin-bottom: 17px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 27px;
+    line-height: 40px;
+    color: #000000;
+}
+.sign-up__google-btn, .sign-up__apple-btn,
+.sign-up__email-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 13px;
+    width: 323px;
+    background-color: #fff;
+    border: 1px solid rgba(228, 234, 237, 0.8);
+    box-sizing: border-box;
+    border-radius: 42px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #000000;
+    margin-bottom: 13px;
+}
+.sign-up__text {
+    margin-top: 20px;
+    width: 370px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+ }
+ .links-wrap {
+     padding: 8px 0px;
+     display: flex;
+     justify-content: center;
+ }
+ .links-wrap a {
+     display: inline-block;
+     margin-left: 10px;
+     margin-right: 10px;
+     font-size: 11px;
+ }
+ /* ==========modal========= */
+ .sign-modal {
+     width: 100%;
+     min-height: 100vh;
+     background-color: rgba(0, 0, 0, 0.5);
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+ }
+ .modal__content {
+     background-color: #FFFFFF;
+     padding: 22px;
+     width: 460px;
+     border-radius: 7px;
+     margin-bottom: 50px;
+ }
+ .modal__title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+ }
+ .modal__input {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 14px;
+    margin-top: 10px;
+ }
+ .modal__info-title {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+ }
+ .modal__info-text {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+ }
+ .modal__btn {
+    background: #1DA1F2;
+    border-radius: 76px;
+    width: 100%;
+    padding: 6px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;
+    border: none;
+    margin-top: 25px;   
+ }

@@ -1,0 +1,52 @@
+.login {
+    width: 450px;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.login__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 49px;
+    margin-bottom: 36px;
+}
+.login-form__input-address, .login-form__input-password {
+    width: 450px;
+    height: 69.56px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 23px 20px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    border-radius: 6px;
+    margin-bottom: 25px;
+}
+.login-form__button {
+    background: #1DA1F2;
+    border-radius: 76px;
+    border: none;
+    width: 450px;
+    height: 59.62px;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.login__forgot-password, .login__sign {
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1DA1F2;
+}
