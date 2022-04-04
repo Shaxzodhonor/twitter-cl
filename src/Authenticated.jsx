@@ -13,7 +13,7 @@ function Authenticated() {
         <Switch>
             <Privates path='/profile' component={Profile} />
             <Privates path='/sign' component={SignUp} />
-            <Public path='/login' component={Login} />
+            <Public path='/' component={Login} />
             <Public path='*' component={Error}  />
         </Switch>
     </>)

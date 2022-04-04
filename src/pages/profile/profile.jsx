@@ -139,10 +139,7 @@ function Profile() {
                         <Route path={'/profile/lists'}><h1>Lists route</h1></Route>
                         <Route path={'/profile/bookmarks'}><h1>Bookmarks route</h1></Route>
                         <Route path={'/profile/messages'}><h1>Messages route</h1></Route>
-                        <Route path={'/profile/notifications'}><h1>Notifications route</h1></Route>
-                        <Route path={"/"}>
-                            <h1>Mavjud emas</h1>
-                        </Route>
+                        <Route path={'/profile/notifications'}><h1>Notifications route</h1></Route>     
                     </Switch>
                 </div>
                 <div className="col-3">
