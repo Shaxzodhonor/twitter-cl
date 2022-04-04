@@ -23,7 +23,7 @@ import Img5 from '../../assets/images/img5.jpg';
 import Img6 from '../../assets/images/img6.jpg';
 import account1Img from '../../assets/images/qiz-bola.jpg';
 import account2Img from '../../assets/images/Shuhrat-aka.jpg';
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 
 function Profile() {
 
@@ -36,43 +36,43 @@ function Profile() {
                     </div>
                     <ul className='menu list-unstyled ps-3 mt-4'>
                         <li className='menu__item'>
-                            <Link to='#'>
+                            <Link to='/profile'>
                                 <img src={homeImg} alt="home-icon" width='23' height='20' />
                                 <span>Home</span>
                             </Link>
                         </li>
                         <li className='menu__item'>
-                            <Link to='#'>
+                            <Link to='/profile/explore'>
                                 <img src={exploreImg} alt="explore-icon" width='23' height='20' />
                                 <span>Explore</span>
                             </Link>
                         </li>
                         <li className='menu__item'>
-                            <Link to='#'>
+                            <Link to='/profile/notifications'>
                                 <img src={notificationImg} alt="notification-icon" width='23' height='20' />
                                 <span>Notifications</span>
                             </Link>
                         </li>
                         <li className='menu__item'>
-                            <Link to='#'>
+                            <Link to='/profile/messages'>
                                 <img src={messagesImg} alt="messages-icon" width='23' height='20' />
                                 <span>Messages</span>
                             </Link>
                         </li>
                         <li className='menu__item'>
-                            <Link to='#'>
+                            <Link to='/profile/bookmarks'>
                                 <img src={bookmarksImg} alt="bookmarks-icon" width='23' height='20' />
                                 <span>Bookmarks</span>
                             </Link>
                         </li>
                         <li className='menu__item'>
-                            <Link to='#'>
+                            <Link to='/profile/lists'>
                                 <img src={listsImg} alt="lists-icon" width='23' height='20' />
                                 <span>Lists</span>
                             </Link>
                         </li>
                         <li className='menu__item'>
-                            <Link to='profile'>
+                            <Link to='/profile'>
                                 <img src={profileImg} alt="profile-icon" width='23' height='20' />
                                 <span>Profile</span>
                             </Link>
@@ -87,49 +87,63 @@ function Profile() {
                     <button className='left__button'>Tweet</button>
                 </div>
                 <div className="col-7 p-0">
-                    <div className='middle__header header'>
-                        <span className='header__title'>Bobur</span>
-                        <span className='header__info'>1,070 Tweets</span>
-                    </div>
-                    <div className='middle__title-wrap'>
-                        {/* <h1>Bobur Mavlonov</h1> */}
-                    </div>
-                    <div className="middle__intro px-3">
-                        <div className='text-end'>
-                        <button className='intro__edit-btn'>Edit profile</button>
-                        </div>
-                        <span className='intro__title'>Bobur</span> <br />
-                        <a className='intro__email' href="/">@bobur_mavlonov</a> <br />
-                        <span className='intro__job'>UX&UI designer at <a href="/">@abutechuz</a></span>
-                        <div className='w-100 d-flex justify-content-between my-3'>
-                            <div>
-                                <img src={locationImg} alt="location-icon" />
-                                <span>Mashag’daman</span>
+                    <Switch>
+                        <Route path="/profile" exact>
+                            <div className='middle__header header'>
+                                <span className='header__title'>Bobur</span>
+                                <span className='header__info'>1,070 Tweets</span>
+                            </div>
+                            <div className='middle__title-wrap'>
+                                {/* <h1>Bobur Mavlonov</h1> */}
+                            </div>
+                            <div className="middle__intro px-3">
+                            <div className='text-end'>
+                                <button className='intro__edit-btn'>Edit profile</button>
+                            </div>
+                            <span className='intro__title'>Bobur</span> <br />
+                            <a className='intro__email' href="/">@bobur_mavlonov</a> <br />
+                            <span className='intro__job'>UX&UI designer at <a href="/">@abutechuz</a></span>
+                            <div className='w-100 d-flex justify-content-between my-3'>
+                                <div>
+                                    <img src={locationImg} alt="location-icon" />
+                                    <span>Mashag’daman</span>
+                                </div>
+                                <div>
+                                    <img src={groupImg} alt="group-icon" />
+                                    <a className='text-decoration-none ms-2' href="/">t.me/boburjon_mavlonov</a>
+                                </div>
+                                <div>
+                                    <img src={bornImg} alt="born-icon" />
+                                    <span>Born November 24, 2000</span>
+                                </div>
+                                <div>
+                                    <img src={calendarImg} alt="calendar-icon" />
+                                    <span className='ms-1'>Joined May 2020</span>
+                                </div>
                             </div>
                             <div>
-                                <img src={groupImg} alt="group-icon" />
-                                <a className='text-decoration-none ms-2' href="/">t.me/boburjon_mavlonov</a>
+                                <span className='intro__follow-info'>67<span className='opacity-50 ms-1'>Following</span></span>
+                                <span className='intro__follow-info'>47<span className='opacity-50 ms-1'>Followers</span></span>
                             </div>
-                            <div>
-                                <img src={bornImg} alt="born-icon" />
-                                <span>Born November 24, 2000</span>
+                            <div className='w-100 d-flex justify-content-around intro__menu mt-4 border-bottom pb-4'>
+                                <a href="/">Tweets</a>
+                                <a href="/">Tweets & replies</a>
+                                <a href="/">Media</a>
+                                <a href="/">Likes</a>
                             </div>
-                            <div>
-                                <img src={calendarImg} alt="calendar-icon" />
-                                <span className='ms-1'>Joined May 2020</span>
                             </div>
-                        </div>
-                        <div>
-                            <span className='intro__follow-info'>67<span className='opacity-50 ms-1'>Following</span></span>
-                            <span className='intro__follow-info'>47<span className='opacity-50 ms-1'>Followers</span></span>
-                        </div>
-                        <div className='w-100 d-flex justify-content-around intro__menu mt-4 border-bottom pb-4'>
-                            <a href="/">Tweets</a>
-                            <a href="/">Tweets & replies</a>
-                            <a href="/">Media</a>
-                            <a href="/">Likes</a>
-                        </div>
-                    </div>
+                        </Route>
+                        <Route path='/profile/explore'>
+                            <h1>Explore route</h1>
+                        </Route>
+                        <Route path={'/profile/lists'}><h1>Lists route</h1></Route>
+                        <Route path={'/profile/bookmarks'}><h1>Bookmarks route</h1></Route>
+                        <Route path={'/profile/messages'}><h1>Messages route</h1></Route>
+                        <Route path={'/profile/notifications'}><h1>Notifications route</h1></Route>
+                        <Route path={"/"}>
+                            <h1>Mavjud emas</h1>
+                        </Route>
+                    </Switch>
                 </div>
                 <div className="col-3">
                     <form className='py-3 d-flex align-content-center justify-content-center'>
